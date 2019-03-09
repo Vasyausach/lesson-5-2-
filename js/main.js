@@ -1,43 +1,50 @@
-let startButton = document.getElementById('start'),
-    budget = document.getElementsByClassName('budget-value'),
-    daybudget = document.getElementsByClassName('daybudget-value'),
-    level = document.getElementsByClassName('level-value'),
-    expenses = document.getElementsByClassName('expenses-value'),
-    optionalexpenses = document.getElementsByClassName('optionalexpenses-value'),
-    income = document.getElementsByClassName('income-value'),
-    monthsavings = document.getElementsByClassName('monthsavings-value'),
-    yearsavings = document.getElementsByClassName('yearsavings-value'),
-    expensesItem = document.getElementsByClassName('expenses-item'),
-    approve1 = document.getElementsByTagName('button')[0],    
-    approve2 = document.getElementsByTagName('button')[1],
-    calculate = document.getElementsByTagName('button')[2],
-    optionalexpensesInput = document.querySelectorAll('.optionalexpenses-item'),
-    choose = document.querySelector('#income'),
-    checkbox = document.querySelector('#savings'), 
-    sum = document.querySelector('#sum'),
-    percent = document.querySelector('#percent'),
-    year = document.querySelector('.year-value'),
-    month = document.querySelector('.month-value'),
-    day = document.querySelector('.day-value');
+let startBtn = document.getElementById('start'), //начать расчет
 
-console.log(startButton);
-console.log(budget);
-console.log(daybudget);
-console.log(level);
-console.log(expenses);
-console.log(optionalexpenses);
-console.log(income);
-console.log(monthsavings);
-console.log(yearsavings);
+    budgetValue = document.getElementsByClassName('budget-value'), //доход
+    dayBudgetValue = document.getElementsByClassName('daybudget-value'), //буюджет на один день
+    levelValue = document.getElementsByClassName('level-value'), //уровень дохода
+    expensesValue = document.getElementsByClassName('expenses-value'), //обязательные расходы
+    optionalExpensesValue = getElementsByClassName('optionalexpenses-value'), //возможные траты
+    incomeValue = document.getElementsByClassName('income-value'), //дополнительный доход
+    monthSavingsValue = getElementsByClassName('monthsavings-value'), //накопления за один месяц
+    yearSavingsValue = getElementsByClassName('yearsavings-value'), //накопления за один год
+
+    expensesItem = document.getElementsByClassName('expenses-item'), //обязательные расходы
+
+    approve1 = document.getElementsByTagName('button')[0], //утвердить
+    approve2 = document.getElementsByTagName('button')[1], //утвердить
+    calculate = document.getElementsByTagName('button')[2], //рассчитать
+
+    optionalExpenses1 = document.querySelectorAll('.optionalexpenses-item')[0], //необязательные расходы
+    optionalExpenses2 = document.querySelectorAll('.optionalexpenses-item')[1], //необязательные расходы
+    optionalExpenses3 = document.querySelectorAll('.optionalexpenses-item')[2], //необязательные расходы
+
+    income = document.querySelector('#income'), //статьи
+    savings = document.querySelector('#savings'), //чекбокс
+    sum = document.querySelector('#sum'), //сумма
+    percent = document.querySelector('#percent'), //процент
+    yearValue = document.querySelector('.year-value'), //год
+    monthValue = document.querySelector('.month-value'), //месяц
+    dayValue = document.querySelector('.day-value'); //день
+
+console.log(startBtn);
+console.log(budgetValue);
+console.log(dayBudgetValue);
+console.log(levelValue);
+console.log(expensesValue);
+console.log(optionalExpensesValue);
+console.log(incomeValue);
+console.log(monthSavingsValue);
+console.log(yearSavingsValue);
 console.log(expensesItem);
 console.log(approve1);
 console.log(approve2);
 console.log(calculate);
-console.log(optionalexpensesInput);
-console.log(choose);
-console.log(checkbox);
+console.log(optionalExpensesItem);
+console.log(income);
+console.log(savings);
 console.log(sum);
 console.log(percent);
-console.log(year);
-console.log(month);
-console.log(day);
+console.log(yearValue);
+console.log(monthValue);
+console.log(dayValue);
